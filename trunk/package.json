@@ -1,0 +1,14 @@
+{
+    "name": "prj-fastfood",
+    "version": "0.0.1",
+    "description": "Fast Foods CSS - JS",
+    "main": "Gruntfile.js",
+    "author": "SANHNX",
+    "license": "GPL",
+    "devDependencies": {
+         "grunt": "~0.4.1",
+         "grunt-contrib-uglify": "~0.2.2",
+         "grunt-contrib-cssmin": "~0.6.1",
+         "grunt-contrib-concat": "~0.3.0"
+    }
+}
