@@ -1,14 +1,33 @@
-.updateBootStrap {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-}
-@height: 100px;
+
+
 
 .element-A {
-	height: @height;	
+	height: @height100;	
 }
 .element-B {
-	height: @height * 2;
+	height: @height100 * 2;
+}
+.updateBootStrap {
+  position: absolute;
+  width: @width100;
+  height: @height100;
+  background-color: blue;
+}
+
+.ff-navbar-inverse {
+	background-image: url("../img/background/binding_dark.png");
+	border-color: @navbar-inverse-border;
+	a { color: rgb(203, 13, 112); }
+	a:hover { color: rgb(172, 11, 95); }
+	.nav > li > a:hover, .nav > li > a:focus {
+		text-decoration: none;
+		background-color: inherit;
+		line-height: 5px;
+		transition-duration: 0.3s;
+	}
+	.navbar-brand:hover, .navbar-brand:focus {
+		text-decoration: none;
+		transition-duration: 0.5s;
+		font-size: 20px;
+	}
 }
