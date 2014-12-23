@@ -1,0 +1,13 @@
+/**********************
+        MIXINS
+***********************/
+@import "variables";
+
+.Round{
+  .RoundShape(9999px);
+}
+.RoundShape(@radius : @defaultRadius){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}

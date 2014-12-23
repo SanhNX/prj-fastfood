@@ -1,71 +1,300 @@
-<html lang="vn">
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Fast Foods</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/favicon.ico" type="image/png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Fast Foods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/png">
 
-<!-- <link type="text/css" media="all" rel="stylesheet" href="css/style.css"> -->
-<link type="text/css" media="all" rel="stylesheet" href="css/bootstrap-responsive.css">
-<link rel="stylesheet/less" type="text/css" href="less/bootstrap.less">
+    <!-- <link type="text/css" media="all" rel="stylesheet" href="css/style.css"> -->
+    <!--<link type="text/css" media="all" rel="stylesheet" href="css/bootstrap-responsive.css">-->
+    <link rel="stylesheet/less" type="text/css" href="less/bootstrap.less">
+    <link rel="stylesheet/less" type="text/css" href="css/half-slider.css">
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- set options before less.js script -->
+
+    <script>
+        less = {
+            env: "development",
+            async: false,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            relativeUrls: false
+        };
+    </script>
+    <script type="text/javascript" src="js/less.min.js"></script>
 
 
-<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!-- set options before less.js script -->
-<script>
-    less = {
-      env: "development",
-      async: false,
-      fileAsync: false,
-      poll: 1000,
-      functions: {},
-      dumpLineNumbers: "comments",
-      relativeUrls: false
-  };
-</script> 
-<script type="text/javascript" src="js/less.min.js"></script>
-
-
-<script type="text/javascript" src="js/underscore.js"></script>
-<header>
-
-</header>
+</head>
 
 <body>
-	<nav class="navbar navbar-fixed-top ff-navbar-inverse" role="navigation">
-      <div class="container">
+<nav class="navbar navbar-fixed-top ff-navbar-inverse border-bottom" role="navigation">
+    <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Fast Foods</a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Shop Giá Rẻ</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Trang Chủ</a></li>
+                <li><a href="#about">Thông Tin</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <!-- /.nav-collapse -->
+        <!--<div class="img-model"></div>-->
+    </div>
+    <!-- /.container -->
+</nav>
+<section>
+<div class="container">
+    <div class="row carousel-holder">
+        <div class="col-md-9">
+            <header id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
 
-	<div class="updateBootStrap">
-		<div class="header-wrapper">
-			<header></header>
-		</div>
-		<div class="main-wrapper">
-			<div class="main-content">
-				
-			</div>
-		</div>
-		<div class="footer-wrapper"></div>
-		<div class="bottom-wrapper"></div>
-	</div>
+                <!-- Wrapper for Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <!-- Set the first background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('img/bg/1.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the second background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('img/bg/2.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2></h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the third background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('img/bg/3.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+
+            </header>
+        </div>
+        <!-- /.col-md-8 -->
+        <div class="col-md-3">
+            <!--<h1>Business Name or Tagline</h1>
+
+            <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it
+                makes a great use of the standard Bootstrap core components. Feel free to use this template for any
+                project you want!</p>
+            <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>-->
+            <a>
+                <img src="img/bg/70off.gif" width="100%" height="30%"/>
+                <img src="img/bg/free.gif" width="100%" height="20%"/>
+            </a>
+        </div>
+        <!-- /.col-md-4 -->
+    </div>
+    <div class="row">
+
+        <div class="col-md-3">
+            <p class="lead">Shop Name</p>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item">Category 1</a>
+                <a href="#" class="list-group-item">Category 2</a>
+                <a href="#" class="list-group-item">Category 3</a>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="well text-center title-bar border-bottom">
+                This is a well that is a great spot for a business tagline or phone number for easy access!
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+
+                        <div class="caption">
+                            <h4 class="pull-right">$24.99</h4>
+                            <h4><a href="#">First Product</a>
+                            </h4>
+
+                            <p>See more snippets like this online store item at <a target="_blank"
+                                                                                   href="http://www.bootsnipp.com">Bootsnipp
+                                - http://bootsnipp.com</a>.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">15 reviews</p>
+
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+
+                        <div class="caption">
+                            <h4 class="pull-right">$64.99</h4>
+                            <h4><a href="#">Second Product</a>
+                            </h4>
+
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">12 reviews</p>
+
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+
+                        <div class="caption">
+                            <h4 class="pull-right">$74.99</h4>
+                            <h4><a href="#">Third Product</a>
+                            </h4>
+
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">31 reviews</p>
+
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+
+                        <div class="caption">
+                            <h4 class="pull-right">$84.99</h4>
+                            <h4><a href="#">Fourth Product</a>
+                            </h4>
+
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">6 reviews</p>
+
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img src="http://placehold.it/320x150" alt="">
+
+                        <div class="caption">
+                            <h4 class="pull-right">$94.99</h4>
+                            <h4><a href="#">Fifth Product</a>
+                            </h4>
+
+                            <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">18 reviews</p>
+
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <h4><a href="#">Like this template?</a>
+                    </h4>
+
+                    <p>If you like this template, then check out <a target="_blank"
+                                                                    href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this
+                        tutorial</a> on how to build a working review system for your online store!</p>
+                    <a class="btn btn-primary" target="_blank"
+                       href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">View
+                        Tutorial</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- Plugin JavaScript -->
+
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
+
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/cbpAnimatedHeader.js"></script>
 </body>
 </html>
