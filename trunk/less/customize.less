@@ -1,33 +1,85 @@
 
-
-
-.element-A {
-	height: @height100;	
+body{
+	font-family: 'segoe ui', 'tahoma';
+	margin: 0;
+	padding: 0;
+	// background: url('../images/bg/main-bg.jpg') no-repeat center top #000;
+//  background-image: url("../img/bg/black-dot.png");
 }
-.element-B {
-	height: @height100 * 2;
+section{
+  padding: 100px 0;
 }
-.updateBootStrap {
-  position: absolute;
-  width: @width100;
-  height: @height100;
-  background-color: blue;
+
+.navbar {
+	transition: background .5s ease-in-out,padding .5s ease-in-out;
+	.img-model{
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+	}
+}
+.navbar-fixed-top {
+	padding: 20px 0;
+	border-width: 0 0 3px;
+}
+.navbar-fixed-top.navbar-shrink {
+	padding: 5px 0;
+//	opacity: 0.6;
+	.img-model{
+		height: 60px;
+		transition: background .5s ease-in-out,padding .5s ease-in-out;
+	}
 }
 
 .ff-navbar-inverse {
-	background-image: url("../img/background/binding_dark.png");
+//	background-image: url("../img/bg/red-dots.png");
+	background-color: #463F47;
+//	background-color:  #DB5860;
+	opacity: inherit;
 	border-color: @navbar-inverse-border;
-	a { color: rgb(203, 13, 112); }
-	a:hover { color: rgb(172, 11, 95); }
+	
+	a { color: #ffffff;font-size: 17px;}
+//	a:hover { color: #BA0E36 }
+	a:hover { color: #DB5860 }
 	.nav > li > a:hover, .nav > li > a:focus {
 		text-decoration: none;
 		background-color: inherit;
 		line-height: 5px;
 		transition-duration: 0.3s;
 	}
+	.navbar-brand, .navbar-brand {
+		font-size: 25px;
+	}
 	.navbar-brand:hover, .navbar-brand:focus {
 		text-decoration: none;
 		transition-duration: 0.5s;
-		font-size: 20px;
+		font-size: 30px;
 	}
+}
+
+
+.img-model{
+	position: absolute;
+	top: 0;
+	right: 130px;
+	width: 200px;
+	height: 90px;
+	background: url('../img/bg/model-2.png') no-repeat;
+	background-size: 100% 100%;
+}
+.carousel-holder {
+  margin-bottom: 30px;
+}
+.title-bar {
+	height: 10px;
+	line-height: 0px;
+	color: #FFFFFF;
+	border: inherit;
+	background-image: url("../img/bg/red-dots.png");
+	&:hover{
+	  text-indent: 10px;
+	  color: #BA0E36;
+	}
+  	transition: 0.5s ease-in-out;
+}
+.border-bottom{
+  border-bottom: 3px solid #BA0E36;
 }
