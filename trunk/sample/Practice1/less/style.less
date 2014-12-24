@@ -1,0 +1,122 @@
+/**********************
+         STYLES
+***********************/
+@import "reset";
+@import "variables";
+@import "color";
+@import "functions";
+
+.shape{
+  display: inline-block;
+  width: @defaultShapeWidth;
+  height: @defaultShapeHeight;
+  background: @defaultShapeColor;
+  margin: @defaultShapeMargin;
+  border : @borderSize solid @borderColor;
+  transition: 0.9s;
+  &:hover{
+    background: @defaultShapeColorHover;
+  }
+}
+
+#shape1{
+  .Round;
+}
+#shape2{
+  .RoundShape;
+}
+
+nav.menu{
+
+  width: 100%;
+  height: 40px;
+  background: @bg-gray;
+  font-size: 11pt;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid #283744;
+  display: table;
+  @media @tablet {
+    height: auto;
+  }
+  @media @mobile {
+    border-bottom: 0;
+  }
+
+  a{
+    color: @white;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    &#pull{
+      display: none;
+      @media @mobile {
+        display: block;
+        background: #233646;
+        width: 100%;
+        position: relative;
+      }
+
+      &:after{
+        @media @mobile {
+          position: absolute;
+          display: inline-block;
+          content:"";
+          top: 5px;
+          right: 15px;
+          width: 30px;
+          height: 30px;
+          background: url("../img/icon/nav-icon.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    &:hover{
+      background: @bg-gray - #222;
+    }
+    @media @tablet {
+      text-align: left;
+      width: 100%;
+      text-indent: 30px;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 40px;
+    @media @tablet {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media @mobile {
+      display: none;
+    }
+  }
+  li{
+    display: inline-block;
+    a {
+      border-right: 1px solid @nav-border;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      @media @tablet {
+        border-bottom: 1px solid @nav-border;
+        border-right: 1px solid @nav-border;
+      }
+    }
+    &:last-child a{
+      border-right: 0;
+      @media @tablet {
+        border-right: 0;
+      }
+    }
+    @media @tablet {
+      width: 50%;
+    }
+  }
+}
