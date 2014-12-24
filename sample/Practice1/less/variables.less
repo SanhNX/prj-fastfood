@@ -7,6 +7,9 @@
 @yellow         : #B8CC24;
 @blue           : #8BC5FF;
 @purple         : #6F3596;
+@white          : #FFFFFF;
+@bg-gray          : #455868;
+@nav-border          : #576979;
 
 
 //== Components
@@ -22,3 +25,10 @@
 //@borderColor : desaturate(@defaultShapeColor, 100%);
 //@borderColor : darken(desaturate(@defaultShapeColor, 100%), 100%);
 //@borderColor : spin(@defaultShapeColor, 100%);
+@base-width  : 1280px;
+@tablet-width : 600px;
+@mobile-width : 480px;
+
+@base:~"screen and (max-width: @{base-width})";
+@tablet:~"screen and (max-width: @{tablet-width})";
+@mobile:~"screen and (max-width: @{mobile-width})";
