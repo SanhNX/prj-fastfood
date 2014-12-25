@@ -130,7 +130,7 @@ nav.menu{
       width: (@list-width -  3*@margin-right)/4;
       height: 200px;
       background: @blue;
-      margin: 0 @margin-right @margin-bottom 0;
+      margin: @margin-right @margin-right 0 0;
       // Tính toán cho width của item + margin-right cho đủ 100% thì có thể xảy ra 2 trường hợp
       // 1.
       // Nếu dùng display: inline-block; để dàng hàng ngang thì vẫn bị rớt xuống do dính 1px của inine-block
@@ -142,7 +142,7 @@ nav.menu{
 //      display: inline-block;
       float: left;
       // implement responsive
-      /*&:nth-child(4n){
+      &:nth-child(4n){
         margin-right: 0;
       }
 
@@ -171,7 +171,7 @@ nav.menu{
           margin-right: 0;
         }
 
-      }*/
+      }
     }
   }
 }
