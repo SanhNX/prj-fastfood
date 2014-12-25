@@ -150,11 +150,41 @@ nav.menu li:last-child a {
 }
 .container .list {
   width: 100%;
-  margin: 10px;
 }
 .container .list .item {
-  width: 200px;
+  width: 23.5%;
   height: 200px;
   background: #8bc5ff;
-  display: inline-block;
+  margin: 0 2% 2% 0;
+  float: left;
+  /*&:nth-child(4n){
+        margin-right: 0;
+      }
+
+      @media @tablet {
+        width: (@list-width -  2*@margin-right)/3;
+        margin: 0 @margin-right @margin-bottom 0;
+        &:nth-child(4n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+
+      }
+
+      @media @mobile {
+        width: (@list-width - @margin-right)/2;
+        margin: 0 @margin-right @margin-bottom 0;
+        &:nth-child(4n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(3n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+
+      }*/
 }

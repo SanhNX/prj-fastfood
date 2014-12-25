@@ -119,18 +119,63 @@ nav.menu{
     }
   }
 }
-
+@list-width: 100%;
+@margin-right: 2%;
+@margin-bottom: @margin-right;
 .container{
-  width: 100%;
+  width: @list-width;
   height: auto;
   .list{
-    width: 100%;
-    margin: 10px;
+    width: @list-width;
+
     .item{
-      width: 200px;
+      width: (@list-width -  3*@margin-right)/4;
       height: 200px;
       background: @blue;
-      display: inline-block;
+      margin: 0 @margin-right @margin-bottom 0;
+      // Tính toán cho width của item + margin-right cho đủ 100% thì có thể xảy ra 2 trường hợp
+      // 1.
+      // Nếu dùng display: inline-block; để dàng hàng ngang thì vẫn bị rớt xuống do dính 1px của inine-block
+      // Khắc phục : dùng đoạn <-- thêm sau item đầu, và --> thêm trước item kế tiếp
+      // 2.
+      // Dùng float: left;
+      // Ở đây ta dùng display: inline-block;
+//      display: inline-block;
+      float: left;
+      // implement responsive
+      &:nth-child(4n){
+        margin-right: 0;
+      }
+
+      @media @tablet {
+        width: (@list-width -  2*@margin-right)/3;
+        margin: 0 @margin-right @margin-bottom 0;
+        &:nth-child(4n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(3n){
+          margin-right: 0;
+        }
+
+      }
+
+      @media @mobile {
+        width: (@list-width - @margin-right)/2;
+        margin: 0 @margin-right @margin-bottom 0;
+        &:nth-child(4n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(3n){
+          margin-right: @margin-right;
+        }
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+
+      }
+
+
+
       @media @tablet {
       }
       @media @mobile {
