@@ -15,20 +15,13 @@
                 e.preventDefault();
                 menu.slideToggle();
             });
-
-            $(window).resize(function(){
-                var w = $(window).width();
-                if(w > 320 && menu.is(':hidden')) {
-                    menu.removeAttr('style');
-                }
-            });
         });
     </script>
 </head>
 <body>
     <nav class="menu">
         <a id="pull" href="#">Menu</a>
-        <ul class="clearfix">
+        <ul>
             <li><a href="#">Home</a></li><!--
             --><li><a href="#">How-to</a></li><!--
             --><li><a href="#">Icons</a></li><!--
@@ -37,6 +30,15 @@
             --><li><a href="#">Tools</a></li>
         </ul>
     </nav>
-
+    <div class="container">
+        <div class="list">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
 </body>
 </html>

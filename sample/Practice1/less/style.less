@@ -35,7 +35,6 @@ nav.menu{
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   border-bottom: 2px solid #283744;
-  display: table;
   @media @tablet {
     height: auto;
   }
@@ -117,6 +116,25 @@ nav.menu{
     }
     @media @tablet {
       width: 50%;
+    }
+  }
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  .list{
+    width: 100%;
+    margin: 10px;
+    .item{
+      width: 200px;
+      height: 200px;
+      background: @blue;
+      display: inline-block;
+      @media @tablet {
+      }
+      @media @mobile {
+      }
     }
   }
 }
