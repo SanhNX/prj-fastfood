@@ -45,7 +45,6 @@ nav.menu {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: bold;
   border-bottom: 2px solid #283744;
-  display: table;
 }
 @media screen and (max-width: 600px) {
   nav.menu {
@@ -144,4 +143,18 @@ nav.menu li:last-child a {
   nav.menu li {
     width: 50%;
   }
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+.container .list {
+  width: 100%;
+  margin: 10px;
+}
+.container .list .item {
+  width: 200px;
+  height: 200px;
+  background: #8bc5ff;
+  display: inline-block;
 }
