@@ -119,9 +119,7 @@ nav.menu{
     }
   }
 }
-@list-width: 100%;
-@margin-right: 2%;
-@margin-bottom: @margin-right;
+
 .container{
   width: @list-width;
   height: auto;
@@ -137,13 +135,14 @@ nav.menu{
       // 1.
       // Nếu dùng display: inline-block; để dàng hàng ngang thì vẫn bị rớt xuống do dính 1px của inine-block
       // Khắc phục : dùng đoạn <-- thêm sau item đầu, và --> thêm trước item kế tiếp
+      // Nhưng có thể vẫn còn dính margin-bottom 1px(chưa fix được)
       // 2.
       // Dùng float: left;
       // Ở đây ta dùng display: inline-block;
 //      display: inline-block;
       float: left;
       // implement responsive
-      &:nth-child(4n){
+      /*&:nth-child(4n){
         margin-right: 0;
       }
 
@@ -172,14 +171,7 @@ nav.menu{
           margin-right: 0;
         }
 
-      }
-
-
-
-      @media @tablet {
-      }
-      @media @mobile {
-      }
+      }*/
     }
   }
 }
